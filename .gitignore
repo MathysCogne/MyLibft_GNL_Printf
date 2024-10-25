@@ -27,6 +27,3 @@ cmake_install.cmake
 *.swp
 
 *.log
-
-# Customize Executable Makefile
-libft
