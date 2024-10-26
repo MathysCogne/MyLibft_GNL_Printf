@@ -6,7 +6,7 @@
 /*   By: mcogne-- <mcogne--@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/13 17:35:20 by mcogne--          #+#    #+#             */
-/*   Updated: 2024/10/22 17:44:49 by mcogne--         ###   ########.fr       */
+/*   Updated: 2024/10/27 01:21:43 by mcogne--         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,6 +15,7 @@
 
 # include <stdarg.h>
 # include <unistd.h>
+# include "libft.h"
 
 /*************** DICTIONARY ***************/
 # define SINGLE_CHAR	'c'
@@ -45,6 +46,6 @@ int	ft_putladdr_base(void *ptr, char *base);
 
 /****************** UTILS *******************/
 
-int	ft_strlen(char *s);
+// int	ft_strlen(char *s);
 
 #endif
