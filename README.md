@@ -1,27 +1,20 @@
 <a name="readme-top"></a>
 <div align="center">
 <h1>Libft - Libft Extra - GNL - Ft_printf</h1>
-<p>42 Paris</p>
-
+<p><a href="https://github.com/MathysCogne/42_libft/blob/main/subject/subject_libft.pdf"><strong>Subject</strong></a></p>
 </br>
-  <a href="https://github.com/MathysCogne/42_libft/blob/main/subject/subject_libft.pdf"><strong>Subjetc</strong></a>
-</br>
-
 </div>
 
-Ce référentiel contient mes implémentations des bibliothèques C essentielles. Il comprend Libft, une collection de fonctions couramment utilisées, Get Next Line pour lire les lignes d'un descripteur de fichier et Ft_printf, une fonction printf personnalisée.
+This repository contains my implementations of essential C libraries.
 
-[libft](https://github.com/MathysCogne/42_libft)
+It includes [libft](https://github.com/MathysCogne/42_libft), a collection of commonly used functions, [Get_Next_Line](https://github.com/MathysCogne/42_Get-Next-Line) for reading lines from a file descriptor, and [ft_printf](https://github.com/MathysCogne/42_ft_printf), a custom printf function.
 
-[get_next_line](https://github.com/MathysCogne/42_Get-Next-Line)
+</br>
 
-[ft_printf](https://github.com/MathysCogne/42_ft_printf)
-
-
-## Libft Extra Functions
+## My Extra Functions
 
 | **Function**                     | **Description**                                                                                     | **Usage**                                         |
-|----------------------------------|------------------------|-----------------------------------------------------------------------------------------------------|--------------------------------------------------|
+|----------------------------------|-----------------------------------------------------------------------------------------------------|--------------------------------------------------|
 | `size_t get_random_index_in_range(size_t a, size_t b)` | Returns a random index within the specified range `[a, b]`.                                       | `size_t index = get_random_index_in_range(1, 10);` |
 | `size_t generate_random_nb(void)`| Generates a random number.                                                                          | `size_t random = generate_random_nb();`         |
 | `size_t ft_count_lines(const char *str)` | Counts the number of lines in a given string.                                                      | `size_t lines = ft_count_lines("Hello\nWorld\n");` |
@@ -32,7 +25,7 @@ Ce référentiel contient mes implémentations des bibliothèques C essentielles
 ## Get Next Line (GNL)
 
 | **Function**                     | **Description**                                                                                     | **Usage**                                         |
-|----------------------------------|------------------------|-----------------------------------------------------------------------------------------------------|--------------------------------------------------|
+|----------------------------------|-----------------------------------------------------------------------------------------------------|--------------------------------------------------|
 | `char *get_next_line(int fd)`   | Reads a line from the file descriptor `fd` and returns it as a string.                             | `char *line = get_next_line(fd);`               |
 | `int ft_read(int fd, char **buffer)` | Reads data from the file descriptor `fd` into the provided `buffer`.                               | `int bytes_read = ft_read(fd, &buffer);`        |
 | `int find_end_line(char **line, char *buffer)` | Finds the end of a line in the provided buffer and updates the line accordingly.                   | `int result = find_end_line(&line, buffer);`    |
@@ -41,7 +34,7 @@ Ce référentiel contient mes implémentations des bibliothèques C essentielles
 ## Ft_printf
 
 | **Function**                     | **Description**                                                                                     | **Usage**                                         |
-|----------------------------------|------------------------|-----------------------------------------------------------------------------------------------------|--------------------------------------------------|
+|----------------------------------|-----------------------------------------------------------------------------------------------------|--------------------------------------------------|
 | `int ft_printf(const char *format, ...)` | Produces output according to a format string, similar to `printf`.                                | `ft_printf("Hello %s", "World");`               |
 | `int ft_putlchar(int c)`          | Outputs a single character `c` to the standard output.                                            | `ft_putlchar('A');`                             |
 | `int ft_putlstr(char *s)`         | Outputs the string `s` to the standard output.                                                   | `ft_putlstr("Hello");`                          |
@@ -52,7 +45,7 @@ Ce référentiel contient mes implémentations des bibliothèques C essentielles
 ## Standard Library Functions
 
 | **Function**                     | **Description**                                                                                     | **Usage**                                         |
-|----------------------------------|------------------------|-----------------------------------------------------------------------------------------------------|--------------------------------------------------|
+|----------------------------------|-----------------------------------------------------------------------------------------------------|--------------------------------------------------|
 | `void ft_bzero(void *s, size_t n)` | Sets the first `n` bytes of the memory area pointed to by `s` to zero.                           | `ft_bzero(buffer, size);`                        |
 | `void *ft_memcpy(void *dest, const void *src, size_t n)` | Copies `n` bytes from memory area `src` to memory area `dest`.                                    | `ft_memcpy(dest, src, size);`                   |
 | `void *ft_memmove(void *dest, const void *src, size_t n)` | Moves `n` bytes from memory area `src` to memory area `dest`, handling overlapping regions.      | `ft_memmove(dest, src, size);`                  |
@@ -72,7 +65,7 @@ Ce référentiel contient mes implémentations des bibliothèques C essentielles
 ## Linked List Functions
 
 | **Function**                     | **Description**                                                                                     | **Usage**                                         |
-|----------------------------------|------------------------|-----------------------------------------------------------------------------------------------------|--------------------------------------------------|
+|----------------------------------|-----------------------------------------------------------------------------------------------------|--------------------------------------------------|
 | `void ft_lstadd_front(t_list **lst, t_list *new)` | Adds the node `new` at the beginning of the list `lst`.                                          | `ft_lstadd_front(&head, new_node);`             |
 | `void ft_lstadd_back(t_list **lst, t_list *new)` | Adds the node `new` at the end of the list `lst`.                                                | `ft_lstadd_back(&head, new_node);`              |
 | `void ft_lstdelone(t_list *lst, void (*del)(void *))` | Deletes the node `lst` and frees its content using `del`.                                        | `ft_lstdelone(node, del_function);`              |
@@ -85,5 +78,3 @@ Ce référentiel contient mes implémentations des bibliothèques C essentielles
 
 ## Disclaimer
 > At 42 School, most projects must comply with the [Norm](https://github.com/42School/norminette/blob/master/pdf/en.norm.pdf).
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
