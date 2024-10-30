@@ -1,28 +1,25 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   get_next_line.h                                    :+:      :+:    :+:   */
+/*   ft_random_nb_in_range.c                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: mcogne-- <mcogne--@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/10/18 13:14:56 by mcogne--          #+#    #+#             */
-/*   Updated: 2024/10/30 07:18:24 by mcogne--         ###   ########.fr       */
+/*   Created: 2024/10/30 06:27:40 by mcogne--          #+#    #+#             */
+/*   Updated: 2024/10/30 06:55:53 by mcogne--         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef GET_NEXT_LINE_H
-# define GET_NEXT_LINE_H
+#include "libft_extra.h"
 
-# include "libft.h"
+size_t	get_random_index_in_range(size_t a, size_t b)
+{
+	size_t	range;
+	size_t	random_nb;
 
-char	*get_next_line(int fd);
-int		ft_read(int fd, char **buffer);
-int		find_end_line(char **line, char *buffer);
-
-int		extract_line(int fd, char **line, char **remaind);
-
-# ifndef BUFFER_SIZE
-#  define BUFFER_SIZE 250
-# endif
-
-#endif
+	if (a >= b)
+		return (0);
+	range = b - a + 1;
+	random_nb = generate_random_nb() % range;
+	return (a + random_nb);
+}

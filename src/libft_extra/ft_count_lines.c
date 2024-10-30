@@ -1,28 +1,31 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   get_next_line.h                                    :+:      :+:    :+:   */
+/*   ft_count_lines.c                                   :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: mcogne-- <mcogne--@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/10/18 13:14:56 by mcogne--          #+#    #+#             */
-/*   Updated: 2024/10/30 07:18:24 by mcogne--         ###   ########.fr       */
+/*   Created: 2024/10/30 06:35:31 by mcogne--          #+#    #+#             */
+/*   Updated: 2024/10/30 06:55:40 by mcogne--         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef GET_NEXT_LINE_H
-# define GET_NEXT_LINE_H
+#include "libft_extra.h"
 
-# include "libft.h"
+size_t	ft_count_lines(const char *str)
+{
+	size_t	count;
 
-char	*get_next_line(int fd);
-int		ft_read(int fd, char **buffer);
-int		find_end_line(char **line, char *buffer);
-
-int		extract_line(int fd, char **line, char **remaind);
-
-# ifndef BUFFER_SIZE
-#  define BUFFER_SIZE 250
-# endif
-
-#endif
+	if (!str)
+		return (0);
+	count = 0;
+	while (*str)
+	{
+		if (*str == '\n')
+			count++;
+		str++;
+	}
+	if (*(str - 1) != '\n' && *(str - 1) != '\0')
+		count++;
+	return (count);
+}
