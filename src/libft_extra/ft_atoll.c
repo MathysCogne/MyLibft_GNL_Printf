@@ -6,9 +6,11 @@
 /*   By: mcogne-- <mcogne--@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/10 20:56:27 by mcogne--          #+#    #+#             */
-/*   Updated: 2024/11/10 20:57:36 by mcogne--         ###   ########.fr       */
+/*   Updated: 2024/11/10 21:27:24 by mcogne--         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include "libft_extra.h"
 
 long long	ft_atoll(const char *str)
 {
