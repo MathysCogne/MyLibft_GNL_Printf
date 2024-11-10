@@ -21,6 +21,7 @@ It includes [libft](https://github.com/MathysCogne/42_libft), a collection of co
 | `size_t count_words(const char *str, char sep)` | Counts the number of words in a string separated by the given separator `sep`.                     | `size_t words = count_words("Hello World", ' ');` |
 | `int ft_abs(int nb)`            | Returns the absolute value of an integer.                                                          | `int abs_value = ft_abs(-42);`                  |
 | `void *ft_realloc(void *ptr, size_t old_size, size_t new_size)` | Reallocates memory for `ptr` from `old_size` to `new_size`.                                        | `ptr = ft_realloc(ptr, old_size, new_size);`   |
+| `long long	ft_atoll(const char *str)` | itoa but with long long :0                                        |  `long long num = ft_atoll("42");`  |
 
 ## Get Next Line (GNL)
 
