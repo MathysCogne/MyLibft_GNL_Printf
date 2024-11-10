@@ -6,7 +6,7 @@
 /*   By: mcogne-- <mcogne--@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/14 17:33:05 by mcogne--          #+#    #+#             */
-/*   Updated: 2024/10/15 19:54:12 by mcogne--         ###   ########.fr       */
+/*   Updated: 2024/11/10 21:25:23 by mcogne--         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,7 @@ static short	is_sep(char c, char sep)
 	return (0);
 }
 
-static size_t	count_worlds(const char *str, char sep)
+static size_t	countt_worlds(const char *str, char sep)
 {
 	size_t	i;
 	size_t	w;
@@ -97,7 +97,7 @@ char	**ft_split(char const *s, char c)
 
 	if (!s)
 		return (NULL);
-	tab = malloc(sizeof(char *) * (count_worlds(s, c) + 1));
+	tab = malloc(sizeof(char *) * (countt_worlds(s, c) + 1));
 	if (!tab)
 		return (NULL);
 	tab = worlds(s, c, tab);
@@ -106,6 +106,6 @@ char	**ft_split(char const *s, char c)
 		free(tab);
 		return (NULL);
 	}
-	tab[count_worlds(s, c)] = NULL;
+	tab[countt_worlds(s, c)] = NULL;
 	return (tab);
 }
