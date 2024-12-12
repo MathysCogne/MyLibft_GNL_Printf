@@ -11,6 +11,12 @@ It includes [libft](https://github.com/MathysCogne/42_libft), a collection of co
 
 </br>
 
+## Garbage Collector
+
+
+[Garbage collector](https://github.com/MathysCogne/my_garbage_collector_c).
+
+
 ## My Extra Functions
 
 | **Function**                     | **Description**                                                                                     | **Usage**                                         |
@@ -24,7 +30,7 @@ It includes [libft](https://github.com/MathysCogne/42_libft), a collection of co
 | `long long	ft_atoll(const char *str)` | itoa but with long long :0                                        |  `long long num = ft_atoll("42");`  |
 
 
-[Garbage collector](https://github.com/MathysCogne/my_garbage_collector_c).
+
 
 
 ## Get Next Line (GNL)
