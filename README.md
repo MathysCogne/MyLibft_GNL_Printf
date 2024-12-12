@@ -23,6 +23,10 @@ It includes [libft](https://github.com/MathysCogne/42_libft), a collection of co
 | `void *ft_realloc(void *ptr, size_t old_size, size_t new_size)` | Reallocates memory for `ptr` from `old_size` to `new_size`.                                        | `ptr = ft_realloc(ptr, old_size, new_size);`   |
 | `long long	ft_atoll(const char *str)` | itoa but with long long :0                                        |  `long long num = ft_atoll("42");`  |
 
+
+[Garbage collector](https://github.com/MathysCogne/my_garbage_collector_c).
+
+
 ## Get Next Line (GNL)
 
 | **Function**                     | **Description**                                                                                     | **Usage**                                         |

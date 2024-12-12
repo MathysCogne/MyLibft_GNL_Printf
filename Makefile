@@ -66,7 +66,7 @@ $(NAME): $(OBJ)
 
 # Clean Rules
 clean:
-	$(V)echo $(RED)'[$(NAME)] Cleaning objects'd$(RESET)
+	$(V)echo $(RED)'[$(NAME)] Cleaning objects'$(RESET)
 	$(V)rm -rf $(OBJDIR)
 
 fclean: clean

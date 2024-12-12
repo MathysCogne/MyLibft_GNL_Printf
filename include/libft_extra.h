@@ -6,7 +6,7 @@
 /*   By: mcogne-- <mcogne--@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/30 05:45:21 by mcogne--          #+#    #+#             */
-/*   Updated: 2024/11/26 15:26:59 by mcogne--         ###   ########.fr       */
+/*   Updated: 2024/12/12 22:32:53 by mcogne--         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -44,7 +44,9 @@
 # define LDBL_MAX 1.18973149535723176502E+4932L
 # define LDBL_MIN 3.36210314311209350626E-4932L
 
-/*************** LIBFT EXTRA ****************/
+/*******************************/
+/*         LIBFT EXTRA         */
+/*******************************/
 size_t		get_random_index_in_range(size_t a, size_t b);
 size_t		generate_random_nb(void);
 size_t		ft_count_lines(const char *str);
@@ -54,5 +56,15 @@ int			ft_abs(int nb);
 void		*ft_realloc(void *ptr, size_t old_size, size_t new_size);
 
 long long	ft_atoll(const char *str);
+
+/*******************************/
+/*       GARBAGE COLLECTOR     */
+/*******************************/
+
+t_gc				*gc_init(void);
+short				gc_add(t_gc *gc, void *ptr);
+short				gc_remove_one(t_gc *gc, void *ptr);
+void				gc_clean(t_gc *gc);
+void				gc_print_debug(t_gc *gc);
 
 #endif
