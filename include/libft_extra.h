@@ -6,7 +6,7 @@
 /*   By: mcogne-- <mcogne--@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/30 05:45:21 by mcogne--          #+#    #+#             */
-/*   Updated: 2024/12/12 22:32:53 by mcogne--         ###   ########.fr       */
+/*   Updated: 2024/12/13 13:33:06 by mcogne--         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -61,10 +61,10 @@ long long	ft_atoll(const char *str);
 /*       GARBAGE COLLECTOR     */
 /*******************************/
 
-t_gc				*gc_init(void);
-short				gc_add(t_gc *gc, void *ptr);
-short				gc_remove_one(t_gc *gc, void *ptr);
-void				gc_clean(t_gc *gc);
-void				gc_print_debug(t_gc *gc);
+t_gc		*gc_init(void);
+short		gc_add(t_gc *gc, void *ptr);
+short		gc_remove_one(t_gc *gc, void *ptr);
+void		gc_clean(t_gc *gc);
+void		gc_print_debug(t_gc *gc);
 
 #endif
