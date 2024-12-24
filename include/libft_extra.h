@@ -6,7 +6,7 @@
 /*   By: mcogne-- <mcogne--@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/30 05:45:21 by mcogne--          #+#    #+#             */
-/*   Updated: 2024/12/13 13:33:06 by mcogne--         ###   ########.fr       */
+/*   Updated: 2024/12/24 22:39:15 by mcogne--         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,24 +16,24 @@
 # include "libft.h"
 
 # define CHAR_BIT 8
-# define SCHAR_MIN (-128)
+# define SCHAR_MIN -128
 # define SCHAR_MAX 127
 # define UCHAR_MAX 255
-# define CHAR_MIN (-128)
+# define CHAR_MIN -128
 # define CHAR_MAX 127
 
-# define SHORT_MIN (-32768)
+# define SHORT_MIN -32768
 # define SHORT_MAX 32767
 # define USHORT_MAX 65535
 
-# define INT_MIN (-2147483648)
+# define INT_MIN -2147483648
 # define INT_MAX 2147483647
 # define UINT_MAX 4294967295U
 
-# define LONG_MIN (-9223372036854775808L)
+# define LONG_MIN -9223372036854775808L
 # define LONG_MAX 9223372036854775807L
 # define ULONG_MAX 18446744073709551615UL
-# define LLONG_MIN (-9223372036854775808LL)
+# define LLONG_MIN -9223372036854775808LL
 # define LLONG_MAX 9223372036854775807LL
 # define ULLONG_MAX 18446744073709551615ULL
 
