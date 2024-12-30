@@ -6,7 +6,7 @@
 /*   By: mcogne-- <mcogne--@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/13 17:35:20 by mcogne--          #+#    #+#             */
-/*   Updated: 2024/12/12 22:32:34 by mcogne--         ###   ########.fr       */
+/*   Updated: 2024/12/30 18:42:49 by mcogne--         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,7 @@
 # include <stdlib.h>
 # include <unistd.h>
 
-# include "struct.h"
+# include "struct_lib.h"
 
 void	ft_bzero(void *s, size_t n);
 void	*ft_memcpy(void *dest, const void *src, size_t n);
