@@ -107,12 +107,9 @@ RESET   := "\033[0m"
 
 all: $(NAME)
 
-$(NAME): $(BUILD)
-
-$(BUILD): $(OBJ)
+$(NAME): $(OBJ)
 	$(V)$(AR) $(ARFLAGS) $@ $^
 	$(V)echo $(GREEN)"[$(NAME)] Library created ✅"$(RESET)
-	@touch $@
 
 #################################
 #        OBJ & DEP FILES        #
