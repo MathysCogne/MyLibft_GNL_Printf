@@ -10,7 +10,7 @@
 </br>
 </br>
 
-It includes [libft](https://github.com/MathysCogne/42_libft), a collection of commonly used functions, [Get_Next_Line](https://github.com/MathysCogne/42_Get-Next-Line) for reading lines from a file descriptor, and [ft_printf](https://github.com/MathysCogne/42_ft_printf), a custom printf function,  and my [garbage collector](https://github.com/MathysCogne/my_garbage_collector_c).
+It includes [libft](https://github.com/MathysCogne/42_libft), a collection of commonly used functions, [Get_Next_Line](https://github.com/MathysCogne/42_Get-Next-Line) for reading lines from a file descriptor, and [ft_printf](https://github.com/MathysCogne/42_ft_printf), a custom printf / fprintf function,  and my [garbage collector](https://github.com/MathysCogne/my_garbage_collector_c).
 
 </br>
 </br>
