@@ -43,6 +43,7 @@ SRC = libft/ft_strlen.c \
 		libft/ft_striteri.c \
 		libft/ft_memmove.c \
 		libft/ft_itoa.c \
+		libft/ft_strcmp.c \
 		libft/ft_lstsize.c \
 		libft/ft_calloc.c \
 		libft/ft_lstadd_back.c \
