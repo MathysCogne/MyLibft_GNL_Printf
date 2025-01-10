@@ -48,6 +48,7 @@ SRC = libft/ft_strlen.c \
 		libft/ft_calloc.c \
 		libft/ft_lstadd_back.c \
 		libft/ft_strnstr.c \
+		libft/ft_strndup.c \
 \
 		get_next_line/get_next_line_utils.c \
 		get_next_line/get_next_line.c \

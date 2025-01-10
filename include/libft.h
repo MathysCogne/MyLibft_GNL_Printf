@@ -6,7 +6,7 @@
 /*   By: mcogne-- <mcogne--@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/13 17:35:20 by mcogne--          #+#    #+#             */
-/*   Updated: 2025/01/04 16:06:44 by mcogne--         ###   ########.fr       */
+/*   Updated: 2025/01/10 12:04:39 by mcogne--         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -56,6 +56,7 @@ int		ft_memcmp(const void *mem1, const void *mem2, size_t size);
 size_t	ft_strlcat(char *dest, const char *src, size_t size);
 size_t	ft_strlen(const char *s);
 size_t	ft_strlcpy(char *dest, const char *src, size_t size);
+char	*ft_strndup(const char *src, size_t n);
 
 /* BONUS */
 void	ft_lstadd_front(t_list **lst, t_list *new);
