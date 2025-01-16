@@ -6,7 +6,7 @@
 /*   By: mcogne-- <mcogne--@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/13 17:35:20 by mcogne--          #+#    #+#             */
-/*   Updated: 2025/01/10 12:04:39 by mcogne--         ###   ########.fr       */
+/*   Updated: 2025/01/16 01:49:35 by mcogne--         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -41,6 +41,7 @@ char	*ft_substr(char const *s, unsigned int start, size_t len);
 char	*ft_strtrim(char const *s1, char const *set);
 char	*ft_strmapi(char const *s, char (*f)(unsigned int, char));
 char	*ft_strjoin(const char *s1, const char *s2);
+char	*ft_strncpy(char *dest, const char *src, size_t n);
 
 int		ft_atoi(const char *str);
 int		ft_isalpha(int character);

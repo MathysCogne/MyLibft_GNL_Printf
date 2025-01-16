@@ -38,6 +38,7 @@ SRC = libft/ft_strlen.c \
 		libft/ft_putendl_fd.c \
 		libft/ft_isalnum.c \
 		libft/ft_strlcat.c \
+		libft/ft_strncpy.c \
 		libft/ft_lstclear.c \
 		libft/ft_bzero.c \
 		libft/ft_striteri.c \
